@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Test your Typing Speed</h1>
+        </header>
+        <section class="main-section">
+            <div id="info-flex" class="flex-row">
+                <div id="errors" class="info-card info-bg shadow">
+                    <h2 class="info-title">Errors</h2>
+                    <div class="info">0</div>
+                </div>
+                <div id="time" class="info-card info-bg shadow">
+                    <h2 class="info-title">Time</h2>
+                    <div class="info">60</div>
+                </div>
+                <div id="accuracy" class="info-card info-bg shadow">
+                    <h2 class="info-title">% Accuracy</h2>
+                    <div class="info">100</div>
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="text-card info-bg shadow">
+                    Click on the area below to start the game.
+                </div>
+                <textarea id="text-input" rows="4" cols="60" placeholder="Start typing here..." class="notepad input-bg shadow"></textarea>
+            </div>
+            <button id="reset-btn" class="invisible">Reset</button>
+        </section>
+        <select id="difficulty" class="selector">
+            <option value="sentence">Sentence</option>
+            <option value="paragraph">Paragraph</option>
+            <option value="poem">Poem</option>
+            <option value="lorem-ipsum">Lorem Ipsum</option>
+        </select>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
